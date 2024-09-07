@@ -38,5 +38,8 @@ function showList(array) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
+  let solostring = strangeArray.filter((element) => typeof element == "string");
+  let stringordenado = solostring.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+ showList(stringordenado);
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
 });
